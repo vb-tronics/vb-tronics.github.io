@@ -19,10 +19,11 @@
     }
   </style>
 <link href="stylesheets/extra.css" rel="stylesheet"/>
+<link href="stylesheets/homePage.css" rel="stylesheet"/>
 <link href="https://unpkg.com/mermaid@8.4.5/dist/mermaid.min.js" rel="stylesheet"/>
 <script>__md_scope = new URL(".", location), __md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e)), __md_set = (e, _, t = localStorage, a = __md_scope) => { try { t.setItem(a.pathname + "." + e, JSON.stringify(_)) } catch (e) { } }</script>
 </head>
-<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="electro" dir="ltr" onload="Animate">
+<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="electro" dir="ltr">
 <script>var palette = __md_get("__palette"); if (palette && "object" == typeof palette.color) for (var [key, value] of Object.entries(palette.color)) document.body.setAttribute("data-md-color-" + key, value)</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -42,23 +43,18 @@
 </path>
 </svg>
 </a>
-<label class="md-header__button md-icon" for="__drawer">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path>
-</svg>
-</label>
+<!--
+      <label class="md-header__button md-icon" for="__drawer">
+        <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path>
+        </svg>
+      </label>
+      -->
 <div class="md-header__title" data-md-component="header-title">
 <div class="md-header__ellipsis">
 <div class="md-header__topic">
 <span class="md-ellipsis">
               Esp32-101-board
-            </span>
-</div>
-<div class="md-header__topic" data-md-component="header-topic">
-<span class="md-ellipsis">
-
-              Начало
-
             </span>
 </div>
 </div>
@@ -166,17 +162,20 @@
 </nav>
 <main class="md-main" data-md-component="main">
 <div class="wrapper">
-<h2 class="title">VB-TRONICS</h2>
+<h2 class="title" style="color: azure;">VB-TRONICS Представя</h2>
+<h2 class="title" style="color: azure;">ESP-101-board</h2>
 <!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg height="50%" id="svg5" inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)" sodipodi:docname="logo.svg" version="1.1" viewbox="0 0 1080 1080" width="50%" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <sodipodi:namedview bordercolor="#666666" borderopacity="1.0" id="namedview7" inkscape:current-layer="layer1-6" inkscape:cx="476.71875" inkscape:cy="439.07452" inkscape:document-units="px" inkscape:lockguides="false" inkscape:pagecheckerboard="0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="1017" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:zoom="1.5407407" pagecolor="#ffffff" showgrid="false" showguides="true"></sodipodi:namedview>
 <defs id="defs2">
 <marker id="SquareM" inkscape:isstock="true" inkscape:stockid="SquareM" orient="auto" refx="0.0" refy="0.0" style="overflow:visible">
-<path class="svg-elem-1" d="M -5.0,-5.0 L -5.0,5.0 L 5.0,5.0 L 5.0,-5.0 L -5.0,-5.0 z " id="path1346" style="fill-rule: evenodd; stroke-width: 1pt;" transform="scale(0.4)"></path>
+<path class="svg-elem-1" d="M -5.0,-5.0 L -5.0,5.0 L 5.0,5.0 L 5.0,-5.0 L -5.0,-5.0 z " id="path1346" style="fill-rule: evenodd; stroke-width: 1pt;" transform="scale(0.4)">
+</path>
 </marker>
 <marker id="Arrow1Lstart" inkscape:isstock="true" inkscape:stockid="Arrow1Lstart" orient="auto" refx="0.0" refy="0.0" style="overflow:visible">
-<path class="svg-elem-2" d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z " id="path1273" style="fill-rule: evenodd; stroke-width: 1pt;" transform="scale(0.8) translate(12.5,0)"></path>
+<path class="svg-elem-2" d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z " id="path1273" style="fill-rule: evenodd; stroke-width: 1pt;" transform="scale(0.8) translate(12.5,0)">
+</path>
 </marker>
 <rect class="svg-elem-3" height="51.401224" id="rect27907" width="86.280625" x="416.71706" y="425.89585">
 </rect>
@@ -210,10 +209,12 @@
 <tspan id="tspan939" sodipodi:role="line" style="stroke-width:0.264583" x="38.325592" y="15.173634">
 </tspan>
 </text>
-<ellipse class="svg-elem-18" cx="20.164047" cy="7.8308005" id="path961" rx="1.0798695" ry="1.0556655" style="fill: none; fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 0.5; stroke-linejoin: round; stroke-miterlimit: 4; paint-order: markers stroke;"></ellipse>
+<ellipse class="svg-elem-18" cx="20.164047" cy="7.8308005" id="path961" rx="1.0798695" ry="1.0556655" style="fill: none; fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 0.5; stroke-linejoin: round; stroke-miterlimit: 4; paint-order: markers stroke;">
+</ellipse>
 <ellipse class="svg-elem-19" cx="39.541405" cy="25.082241" id="path961-6" rx="3.5039937" ry="4.8314738" style="fill: none; fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 0.767162; stroke-linejoin: round; stroke-miterlimit: 4; paint-order: markers stroke;">
 </ellipse>
-<ellipse class="svg-elem-20" cx="24.704433" cy="10.50592" id="path961-4" rx="1.0798695" ry="1.0556655" style="fill: none; fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 0.5; stroke-linejoin: round; stroke-miterlimit: 4; paint-order: markers stroke;"></ellipse>
+<ellipse class="svg-elem-20" cx="24.704433" cy="10.50592" id="path961-4" rx="1.0798695" ry="1.0556655" style="fill: none; fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 0.5; stroke-linejoin: round; stroke-miterlimit: 4; paint-order: markers stroke;">
+</ellipse>
 <ellipse class="svg-elem-21" cx="29.244818" cy="7.8308005" id="path961-5" rx="1.0798695" ry="1.0556655" style="fill: none; fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 0.5; stroke-linejoin: round; stroke-miterlimit: 4; paint-order: markers stroke;">
 </ellipse>
 <ellipse class="svg-elem-22" cx="33.785206" cy="10.593629" id="path961-8" rx="1.0798695" ry="1.0556655" style="fill: none; fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 0.5; stroke-linejoin: round; stroke-miterlimit: 4; paint-order: markers stroke;">
@@ -268,12 +269,11 @@
 </g>
 </svg>
 <div class="controls">
-<button class="btn-draw">Draw</button>
+<button class="btn-draw" style="background-color: greenyellow; width: 100%; height: 100%; font-size: x-small;">Начало</button>
 <button class="btn-erase">Erase</button>
 </div>
 </div>
-      /div&gt;
-      <a class="md-top md-icon" data-md-component="top" data-md-state="hidden" href="#">
+<a class="md-top md-icon" data-md-component="top" data-md-state="hidden" href="#">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
 </svg>
@@ -303,6 +303,23 @@
       setTimeout(draw, 300)
     </script>
 <footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Next: Инфо" class="md-footer__link md-footer__link--next" href="boardInfo/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Инфо
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path>
+</svg>
+</div>
+</a>
+</nav>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">
