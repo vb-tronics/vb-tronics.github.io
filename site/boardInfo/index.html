@@ -15,6 +15,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
 <link href="../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../stylesheets/homePage.css" rel="stylesheet"/>
 <link href="https://unpkg.com/mermaid@8.4.5/dist/mermaid.min.js" rel="stylesheet"/>
 <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </head>
@@ -171,6 +172,11 @@
       На тази страница
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    Здравейте!
+  </a>
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#board-101">
     Board-101
@@ -359,6 +365,11 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    Здравейте!
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#board-101">
     Board-101
   </a>
@@ -371,6 +382,12 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="_1">Информация за развойната платка</h1>
+<h2 id="_2">Здравейте!</h2>
+<p>Тук ще намерите информация  за развойна платка  <strong>ESP32-101-board</strong> базирана на съвременния и широко използван микронтролер ESP32  на фирмата <a href="https://www.espressif.com/en/products/socs/esp32">Espressif</a>. Това е широко популярен контролер в сферата на DIY и IoT проектите. Двуядрен микропроцесор със WiFi и Bluetooth LE 5.0 функционалности позволяващи по-голяма гъвкавост при комуникациите с други устройства в съвременния свят. </p>
+<p>Широкото му приложение в сферата на любителите се дължи на това, че този микроконтролер може да се програмира чрез вече познатата на много хора среда за програмиране Arduino IDE само с <a href="../ide-install/">добавянто на един допълнителен  Add-on</a>. </p>
+<p>Поради това че Arduino IDE не е native средата за програмиране на контролера има много подводни камъни на, които човек може да попадне. Ето защо ние от VB-tronics разработихме развойна платка с помощта на която да се разгледат и опишат, с нагледни примери, използването на повечето функционалности на този контролер чрез Ардуино средата. Разбира се, за да се използват повечето възножностите на контрелара е нужна и периферия, ето тук идва и ползата на <strong>ESP32-101-board</strong> развойна платка "<em>аут ъф да бокс</em>", без нужда от бредборд и досадни кабели. 
+<img alt="esp32-101-board_front" loading="lazy" src="../img/pcb_front_small.png"/>
+<img alt="esp32-101-board_back" loading="lazy" src="../img/pcb_back_small.png"/></p>
 <h2 id="board-101">Board-101</h2>
 <p><strong>ESP32-101-board</strong> е платка, състояща се от микронтролер и редица периферни модули, свързани към него. Използваният контролер е <strong><em>ESP32</em></strong> под формата на <strong><em>30 pin</em></strong>-ов модул.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Периферия</label><label for="__tabbed_1_2">Микроконтролер</label></div>
@@ -506,6 +523,5 @@
 </div>
 <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.361d90f1.min.js"}</script>
 <script src="../assets/javascripts/bundle.289a2a4b.min.js"></script>
-<script src="../javascripts/extra.js"></script>
 </body>
 </html>

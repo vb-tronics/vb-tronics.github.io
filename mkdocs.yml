@@ -34,8 +34,9 @@ nav:
     - ESP32-LEDC: Notes/ESP32-LEDC/ESP32-LEDC.md
     - ESP32-TIMER: Notes/ESP32-TIMER/ESP32-TIMER.md
 theme:
-  custom_dir: docs/overrides
+  
   name: material
+  custom_dir: docs/overrides
   icon:
     logo: material/rocket-launch-outline
   favicon: img/rocket-launch-outline.png
@@ -56,10 +57,10 @@ theme:
     - navigation.top
 
 extra_css:
-  - stylesheets/extra.css        
+  - stylesheets/extra.css 
+  - stylesheets/homePage.css   
   - https://unpkg.com/mermaid@8.4.5/dist/mermaid.min.js
-extra_javascript:
-  - javascripts/extra.js
+
 plugins:
   - markdownmermaid:
      init_options:
