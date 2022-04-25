@@ -26,7 +26,7 @@
   <script>__md_scope = new URL(".", location), __md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e)), __md_set = (e, _, t = localStorage, a = __md_scope) => { try { t.setItem(a.pathname + "." + e, JSON.stringify(_)) } catch (e) { } }</script>
 </head>
 
-<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="electro" dir="ltr">
+<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="electro" dir="ltr" onload="draw()">
   <script>var palette = __md_get("__palette"); if (palette && "object" == typeof palette.color) for (var [key, value] of Object.entries(palette.color)) document.body.setAttribute("data-md-color-" + key, value)</script>
   <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox" />
   <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox" />
@@ -188,7 +188,8 @@
           inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)" sodipodi:docname="logo.svg"
           xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
           xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink"
-          xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+          xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" 
+          onclick="gotoPage()">
           <sodipodi:namedview id="namedview7" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0"
             inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0"
             inkscape:document-units="px" showgrid="false" inkscape:zoom="1.5407407" inkscape:cx="476.71875"
@@ -401,8 +402,8 @@
 
 
         <div class="controls">
-          <button class="btn-draw" style="background-color: greenyellow; width: 100%; height: 100%; font-size: x-small;">Начало</button>
-          <button class="btn-erase">Erase</button>
+          <button class="btn-draw" style="color: black; background-color: greenyellow; width: 100%; height: 150%; font-size: large; font-weight: lighter;" >Започни от тук</button>
+          <!-- <button class="btn-erase">Erase</button> -->
         </div>
       </div>
 
@@ -420,6 +421,7 @@
       var btnDraw = document.querySelector('.btn-draw')
       var btnErase = document.querySelector('.btn-erase')
 
+      
       // We are only adding and removing the 'active' class,
       // the entire animation is defined in the CSS code
       function draw() {
@@ -427,16 +429,24 @@
       }
 
       function erase() {
+        
         wrapper.classList.remove('active')
       }
-
+      function gotoPage(){
+        window.location.href="boardInfo/"
+      }
       // Add handlers to our buttons
-      btnDraw.addEventListener('click', draw, false)
+
+      btnDraw.addEventListener('click', gotoPage, false)
       btnErase.addEventListener('click', erase, false)
 
       // Play draw animation once
-      setTimeout(draw, 300)
+      setTimeout(draw, 200)
     </script>
+
+
+   <!-- Hiding The Footer
+    
     <footer class="md-footer">
       <nav aria-label="Footer" class="md-footer__inner md-grid">
         <a aria-label="Next: Инфо" class="md-footer__link md-footer__link--next" href="boardInfo/" rel="next">
@@ -467,7 +477,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer>  -->
   </div>
   <div class="md-dialog" data-md-component="dialog">
     <div class="md-dialog__inner md-typeset"></div>
